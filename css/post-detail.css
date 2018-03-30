@@ -26,11 +26,7 @@
  */
 
 .single-template h1, .single-template h2, .single-template h3, .single-template h4, .single-template h5, .single-template h6 {
-	color: #333;
-	margin: 19px 0px 17px 0px;
-	font-size: 18px;
-    line-height: 24px;
-	font-family:'Roboto Bold',sans-serif;
+	
 }
 
 

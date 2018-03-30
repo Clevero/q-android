@@ -24,7 +24,10 @@ define([
     'root/config',
     'theme/js/moment.min',
     'theme/js/velocity.min',
-    'theme/js/jquery.fitvids'
+    'theme/js/jquery.fitvids',
+	'theme/js/auth/auth-pages',
+	'theme/js/auth/simple-login',
+	'theme/js/auth/premium-posts'
     ], function($,App,Storage,TemplateTags,Config,Moment,Velocity) {
 
 
