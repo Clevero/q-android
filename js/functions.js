@@ -407,18 +407,27 @@ define([
             
             // Change nav bar title
             // Todo: create a generic function
+			/*
             if ( $('#app-header > h1').html() != '' ) {
                 $('#app-header > h1').html('');
             }
-
+			*/
+			$('#app-header > h1').html(current_screen.label);
+			
         }
-                        
+		
+		//Single
+		if(current_screen.screen_type=="single"){
+			$('#panel-header > h1').html(current_screen.label);
+		}
+		
         // Actions shared by single and page
         if (current_screen.screen_type=="single" || current_screen.screen_type=="page") {
 
             // Make any necessary modification to post/page content
             prepareContent( currentScreenObject );
-            
+			
+			
             // Display videos and make them responsive
             // We defer video loading to keep transitions smooth
             loadAndFormatVideosFor( currentScreenObject );
