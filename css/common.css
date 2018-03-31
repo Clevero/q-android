@@ -99,7 +99,7 @@ a {
     bottom: 0px;
     left: 0px;
 	width: 100%;
-    background-color: #fff;
+    background-color: #F8F8F8;
     -webkit-overflow-scrolling:touch; /* Enables inertial scrolling */
 }
 
@@ -212,7 +212,7 @@ a {
  */
 
 .app-header, .panel-header {
-	background-color: #424242;
+	background-color: #5BC500;
     box-shadow: 0 2px 5px rgba(0,0,0,0.26);
     color: #fff;
 }
