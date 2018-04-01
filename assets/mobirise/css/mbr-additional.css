@@ -1373,7 +1373,8 @@ body {
   display: none;
 }
 .cid-qLJfQqCIkJ {
-  background: linear-gradient(45deg, #7fd9fc, #6576aa);
+  background: rgb(255,255,255);
+  background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(91,197,0,1) 70%);
 }
 .cid-qLJhex6nc1 {
   padding-top: 60px;
