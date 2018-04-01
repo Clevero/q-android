@@ -42,6 +42,11 @@ define([
     
 	App.addCustomRoute( 'home', 'home' );
 	
+	App.filter( 'default-route', function( default_route ) {
+	default_route = 'home';
+	return default_route ;
+	} );
+	
 	App.filter( 'template', function( template, current_screen ) {
 
     // Detect single
