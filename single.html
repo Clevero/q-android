@@ -20,10 +20,6 @@
             <%= post.title %>
         </h1>
 
-        <div class="post-meta">
-            By <span class="post-author"><%= post.author %></span><span class="post-publish-date"><%= getCustomDate(post.date) %></span>
-        </div>
-
     </div>
 
     <% if(  post.thumbnail && post.thumbnail.src && post.thumbnail.src.length ){ %>
