@@ -58,7 +58,7 @@ define([
 
         // Call template for specific category's slug
         if ( post_categories.indexOf('orte') !== -1 ){
-            template = 'orte'; // corresponds to orte.html
+            template = 'ort'; // corresponds to orte.html
         }
 
     }
