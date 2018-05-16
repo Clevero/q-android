@@ -1,0 +1,96 @@
+<!--
+ * Content is enclosed in <div id="app-content-wrapper"><div id="app-screen"></div></div>
+ * Subhead: is added by add-custom-data.php in the theme's php folder / It expects that the post has a subhead custom field
+ * Thumbnail caption: is added by add-custom-data.php in the theme's php folder
+ * Custom post date: getCustomDate() added in functions.js as a template's parameter
+ * Handler for image loading error: displayDefaultImage() added in functions.js as a template's parameter
+-->
+<script>
+    $('#app-header > h1').html('Meine Schichten');
+</script>
+
+<div id="content" class="content single-template">
+
+
+    <section class="timeline1 cid-qLJjNj6Byc" id="timeline1-n">
+
+        <div class="container align-center">
+            <h2 class="mbr-section-title pb-3 mbr-fonts-style display-2">Meine Schichten</h2>
+            <h3 class="mbr-section-subtitle pb-5 mbr-fonts-style display-5">
+                <p>Wo habe ich wann welche Schicht?</p>
+            </h3>
+            <div class="container timelines-container" mbri-timelines="">
+
+                <%
+                if(meine_schichten != null){
+
+                //tage
+                for(i = 0; i < meine_schichten.length; i++){
+
+                //schichten
+                //datum
+                %> <div class="row timeline-element reverse separline"> <%
+                %>
+
+                <div class="timeline-date-panel col-xs-12 col-md-6  align-left">
+                    <div class="time-line-date-content">
+                        <p class="mbr-timeline-date mbr-fonts-style display-5"><%= meine_schichten[i][0] %></p>
+                    </div>
+                </div>
+                <span class="iconBackground"></span>
+                <hr/>
+
+
+                <%
+                //console.log(meine_schichten[i][0]);
+
+                for(k = 1; k < meine_schichten[i].length; k++){
+
+
+                //schicht
+
+                %>
+
+                <div class="col-xs-12 col-md-6 align-right">
+                    <div class="timeline-text-content">
+                        <h4 class="mbr-timeline-title pb-3 mbr-fonts-style display-5">
+                            <%
+                            if(meine_schichten[i][k][3] != -1){
+                                %><%= meine_schichten[i][k][2] %><%
+                            }else{
+                                %><%= meine_schichten[i][k][2] %><%
+                            }
+                            %>
+                            <%= console.log("url: " + TemplateTags.getPostLink('141') ) %>
+                        </h4>
+                        <p class="mbr-timeline-text mbr-fonts-style display-7">
+                            <u>
+                                <li>Wann: <%= meine_schichten[i][k][0] %> bis <%= meine_schichten[i][k][1] %> Uhr</li>
+                            </u>
+                    </div>
+                </div>
+                <hr>
+
+
+                <%
+
+
+                }
+                %> </div> <%
+
+                }
+                }
+                %>
+
+
+
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+</div>
