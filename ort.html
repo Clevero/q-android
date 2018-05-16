@@ -7,73 +7,77 @@
  -->
 
 <div id="content" class="content single-template">
-	
-	<%
-	if( post.thumbnail && post.thumbnail.src && post.thumbnail.src.length ){
-			%><section class="mbr-section content5 cid-qLJhex6nc1 mbr-parallax-background" id="content5-7" style="background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('https://lh5.googleusercontent.com/p/AF1QipMrWQPufuM84BbAar_LrU4y8buzgswncAeINLvh=s408-k-no') "> <%
-	}
-	else{
-			%><section class="mbr-section content5" id="content5-7" style="background-color: #3ec31d; padding-top: 20px;"><%
 
-	}
-	
-	%>
+    <section class="mbr-section content5" id="content5-7" style="background-color: #3ec31d; padding-top: 20px;">
 
-    
 
-    
 
-    <div class="container">
-        <div class="media-container-row">
-            <div class="title col-12 col-md-8">
-                <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1"><%= post.title %></h2>
-                <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5" ><%= post.zusatz %><br></h3>
-                
-                
+
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 col-md-8">
+                    <h2 class="align-center mbr-bold mbr-white pb-3 mbr-fonts-style display-1"><%= post.title %></h2>
+                    <h3 class="mbr-section-subtitle align-center mbr-light mbr-white pb-3 mbr-fonts-style display-5" ><%= post.zusatz %><br></h3>
+
+
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="engine"><a href="https://mobirise.ws/g">create free website</a></section><section class="mbr-section article content11 cid-qLJhutyfQk" id="content11-c">
-     
+    <section class="engine"><a href="https://mobirise.ws/g">create free website</a></section><section class="mbr-section article content11 cid-qLJhutyfQk" id="content11-c">
 
-    <div class="container">
-        <div class="media-container-row">
-            <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
-                <ol>
-                    <li><strong>Bus: <%= post.next_bus1 %> (<%= post.next_bus1_entfernung %>)<br></strong>
-						<br>
-						- Linien: <%= post.busverkehr1 %>
-						<br>
-						<a href="#" onclick="window.open('https://www.rmv.de/auskunft/bin/jp/query.exe/dn?SID=A=1@O=<%= post.next_bus1 %>f@X=8652324@Y=50591281@U=80@L=003014591@B=1@V=6.9,@p=1521814818@&externalCall=yes&start=yes', '_system');">
-							<img src="https://www.rmv.de/auskunft/s/n/img/d/inputgen_button.gif" alt="RMV Fahrplanauskunft - Button" />
-						</a>
-					</li>
-					
-                    <li><strong>Bus: <%= post.next_bus2 %> (<%= post.next_bus2_entfernung %>)<br></strong>
-						<br>
-						- Linien: <%= post.busverkehr2 %>
-						<br>
-						<a href="#" onclick="window.open('https://www.rmv.de/auskunft/bin/jp/query.exe/dn?SID=A=1@O=<%= post.next_bus2 %>f@X=8652324@Y=50591281@U=80@L=003014591@B=1@V=6.9,@p=1521814818@&externalCall=yes&start=yes', '_system');">
-							<img src="https://www.rmv.de/auskunft/s/n/img/d/inputgen_button.gif" alt="RMV Fahrplanauskunft - Button" />
-						</a>
-					</li>
-                    <li>
-						<strong>Maps</strong> <br>- Google Maps:<br>- OpenStreetMap:
-					</li>
-                </ol>
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="mbr-text counter-container col-12 col-md-8 mbr-fonts-style display-7">
+                    <ol>
+                        <li><strong>Bus1: <%= post.next_bus1 %><br></strong>
+                            <br>
+                            * Entfernung: <%= post.next_bus1_entfernung %>
+                            <br>
+                            * Linien: <%= post.busverkehr1 %>
+
+                            <br>
+                            <a href="#" onclick="window.open('https://www.rmv.de/auskunft/bin/jp/query.exe/dn?SID=A=1@O=<%= post.next_bus1 %>f@X=8652324@Y=50591281@U=80@L=003014591@B=1@V=6.9,@p=1521814818@&externalCall=yes&start=yes', '_system');">
+                                <img width="150" src="<%= TemplateTags.getThemeAssetUrl('img/KoTi_Logo_40x15_2c.png') %>" alt="RMV Fahrplanauskunft - Button" />
+                            </a> <br>(Fahrplanauskunft; klicken, danach runterscrollen)
+                        </li>
+
+                        <li><strong>Bus2: <%= post.next_bus2 %><br></strong>
+                            <br>
+                            * Entfernung: <%= post.next_bus2_entfernung %>
+                            <br>
+                            * Linien: <%= post.busverkehr2 %>
+                            <br>
+                            <a href="#" onclick="window.open('https://www.rmv.de/auskunft/bin/jp/query.exe/dn?SID=A=1@O=<%= post.next_bus2 %>f@X=8652324@Y=50591281@U=80@L=003014591@B=1@V=6.9,@p=1521814818@&externalCall=yes&start=yes', '_system');">
+                                <img width="150" src="<%= TemplateTags.getThemeAssetUrl('img/KoTi_Logo_40x15_2c.png') %>" alt="RMV Fahrplanauskunft - Button" />
+                            </a> <br>(Fahrplanauskunft; klicken, danach runterscrollen)
+                        </li>
+                        <li>
+                            <strong>Adresse</strong>
+                            <br>
+                            <%= post.adresse %>
+                            <br>
+                            <a href="#" onclick="window.open('https://www.google.com/maps/search/?api=1&query=' + post.adresse)">
+                                <img width="100" src="<%= TemplateTags.getThemeAssetUrl('img/google_maps.png') %>">
+                            </a>
+                        </li>
+                    </ol>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-	
-	<script src="<%= TemplateTags.getThemeAssetUrl('assets/web/assets/jquery/jquery.min.js') %>">
-	 <script src="<%= TemplateTags.getThemeAssetUrl('js/theme/js/script.js') %>">
-	 <script src="<%= TemplateTags.getThemeAssetUrl('js/parallax/jarallax.min.js') %>">
-	 <script src="<%= TemplateTags.getThemeAssetUrl('js/smoothscroll/smooth-scroll.js') %>">
-	<script src="<%= TemplateTags.getThemeAssetUrl('js/bootstrap/js/bootstrap.min.js') %>">
-	<script src="<%= TemplateTags.getThemeAssetUrl('js/tether/tether.min.js') %>">
-	<script src="<%= TemplateTags.getThemeAssetUrl('js/popper/popper.min.js') %>">
-	
-</div>
+    </section>
+
+    <script src="<%= TemplateTags.getThemeAssetUrl('assets/web/assets/jquery/jquery.min.js') %>">
+        <script src="<%= TemplateTags.getThemeAssetUrl('js/theme/js/script.js') %>">
+            <script src="<%= TemplateTags.getThemeAssetUrl('js/parallax/jarallax.min.js') %>">
+            <script src="<%= TemplateTags.getThemeAssetUrl('js/smoothscroll/smooth-scroll.js') %>">
+            <script src="<%= TemplateTags.getThemeAssetUrl('js/bootstrap/js/bootstrap.min.js') %>">
+            <script src="<%= TemplateTags.getThemeAssetUrl('js/tether/tether.min.js') %>">
+            <script src="<%= TemplateTags.getThemeAssetUrl('js/popper/popper.min.js') %>">
+
+            </div>
