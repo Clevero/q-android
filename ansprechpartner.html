@@ -1,0 +1,102 @@
+<!--
+ * Content is enclosed in <div id="app-content-wrapper"><div id="app-screen"></div></div>
+ * Subhead: is added by add-custom-data.php in the theme's php folder / It expects that the post has a subhead custom field
+ * Thumbnail caption: is added by add-custom-data.php in the theme's php folder
+ * Custom post date: getCustomDate() added in functions.js as a template's parameter
+ * Handler for image loading error: displayDefaultImage() added in functions.js as a template's parameter
+-->
+<script>
+    $('#app-header > h1').html('Ansprechpartner');
+</script>
+
+<div id="content" class="content single-template">
+
+
+    <section class="testimonials5 cid-qLJj6cAXOk" id="testimonials5-j">
+
+
+
+
+        <div class="container">
+            <div class="media-container-row">
+                <div class="title col-12 align-center">
+                    <h2 class="pb-3 mbr-fonts-style display-2">Kontakt</h2>
+                    <h3 class="mbr-section-subtitle mbr-light pb-3 mbr-fonts-style display-5">
+                        Wer ist mein passender Ansprechpartner bei direkten Fragen?
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="media-container-column">
+
+
+                <div class="mbr-testimonial align-center col-12 col-md-10">
+                    <div class="panel-item">
+                        <div class="card-block">
+                            <div class="testimonial-photo">
+                                <img src="<%= TemplateTags.getThemeAssetUrl('assets/images/touch-icon-ipad-retina-152x152.png') %>">
+                            </div>
+                            <p class="mbr-text mbr-fonts-style mbr-white display-7">Bei spezifischen Fragen</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="mbr-author-name mbr-bold mbr-fonts-style mbr-white display-7">Helfer-Line</div>
+                            <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style mbr-white display-7">Tel: <a href="tel:01637166376">0163/ 7166376</a>
+                                <br>Mail: <a href="mailto:helfer@landeskinderturnfest.de">helfer@landeskinderturnfest.de</a></small>
+                        </div>
+                    </div>
+                </div>
+                <div class="mbr-testimonial align-center col-12 col-md-10">
+                    <div class="panel-item">
+                        <div class="card-block">
+                            <div class="testimonial-photo">
+                                <img src="<%= TemplateTags.getThemeAssetUrl('assets/images/waldschmidt-milena-117x150.jpg') %>" alt="" title="">
+                            </div>
+                            <p class="mbr-text mbr-fonts-style mbr-white display-7">Team-Helfer</p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="mbr-author-name mbr-bold mbr-fonts-style mbr-white display-7">Milena Waldschmidt</div>
+                            <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style mbr-white display-7">Tel: <a href="tel:069677377253">069/6773772-53</a><br>Mail: <a href="mailto:helfer@landeskinderturnfest.de">waldschmidt@htv-online.de</a><br></small>
+                        </div>
+                    </div>
+                </div><div class="mbr-testimonial align-center col-12 col-md-10">
+                <div class="panel-item">
+                    <div class="card-block">
+                        <div class="testimonial-photo">
+                            <img src="<%= TemplateTags.getThemeAssetUrl('assets/images/milena-117x150.jpg') %>" alt="" title="">
+                        </div>
+                        <p class="mbr-text mbr-fonts-style mbr-white display-7">
+                            Team-Helfer</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="mbr-author-name mbr-bold mbr-fonts-style mbr-white display-7">Milena Schäck</div>
+                        <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style mbr-white display-7">Mail: <a href="mailto:helfer@landeskinderturnfest.de">milena.schaeck@htj.de</a><br></small>
+                    </div>
+                </div>
+            </div>
+
+                <div class="mbr-testimonial align-center col-12 col-md-10">
+                <div class="panel-item">
+                    <div class="card-block">
+                        <div class="testimonial-photo">
+                            <img src="<%= TemplateTags.getThemeAssetUrl('assets/images/touch-icon-ipad-retina-152x152.png') %>">
+                        </div>
+                        <p class="mbr-text mbr-fonts-style mbr-white display-7">
+                            Bei allgemeinen Fragen vor und nach der Veranstaltung</p>
+                    </div>
+                    <div class="card-footer">
+                        <div class="mbr-author-name mbr-bold mbr-fonts-style mbr-white display-7">
+                            HTJ-Büro</div>
+                        <small class="mbr-author-desc mbr-italic mbr-light mbr-fonts-style mbr-white display-7">
+                            Tel: <a href="tel:066317050">06631-705-0</a>
+                            <br>
+                            Mail: <a href="mailto:helfer@landeskinderturnfest.de">info@htj.de</a>
+                            <br>
+                        </small>
+                    </div>
+                </div>
+            </div>
+    </section>
+
+</div>
