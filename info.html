@@ -1,0 +1,70 @@
+<!--
+ * Content is enclosed in <div id="app-content-wrapper"><div id="app-screen"></div></div>
+ * Subhead: is added by add-custom-data.php in the theme's php folder / It expects that the post has a subhead custom field
+ * Thumbnail caption: is added by add-custom-data.php in the theme's php folder
+ * Custom post date: getCustomDate() added in functions.js as a template's parameter
+ * Handler for image loading error: displayDefaultImage() added in functions.js as a template's parameter
+-->
+<script>
+    $('#app-header > h1').html('Info & Credits');
+</script>
+<link href="<%= TemplateTags.getThemeAssetUrl('assets/meldezentrale/bootstrap.min.css') %>" rel="stylesheet" id="bootstrap-css">
+<script src="<%= TemplateTags.getThemeAssetUrl('assets/meldezentrale/bootstrap.min.js') %>"></script>
+<script src="<%= TemplateTags.getThemeAssetUrl('assets/meldezentrale/jquery-1.11.1.min.js') %>"></script>
+
+<div id="content" class="content single-template">
+
+
+    <ul>
+        <li><h1>Info</h1></li>
+            <ul>
+                <li>Version: 1.0</li>
+                <li>Lizenz: GPL</li>
+                <li>Quellcode: <a href="#" onlick="window.open('https://github.com/helfer-app');">https://github.com/helfer-app</a></li>
+                <li>Entwicklung: Marcel Caspar (<a href="mailto:marcel@turnjugend-frankfurt.de">marcel@turnjugend-frankfurt.de</a>)</li>
+            </ul>
+        <br>
+        <br>
+        <br>
+
+        <li><h1>Autoren</h1></li>
+        <ul>
+            <li>Marcel Caspar(<a href="mailto:marcel@turnjugend-frankfurt.de">marcel@turnjugend-frankfurt.de</a>)</li>
+            <li>Team Helfer (<a href="mailto:helfer@landeskinderturnfest.de">helfer@landeskinderturnfest.de</a>)</li>
+        </ul>
+
+        <br>
+        <br>
+        <br>
+        <li><h1>Grafiken</h1></li>
+        <table border="1" width="100%">
+            <tr>
+                <td><b>Grafik</b></td>
+                <td><b>Urheber</b></td>
+                <td><b>Lizenz</b></td>
+            </tr>
+            <tr>
+                <td><img width="150" src="<%= TemplateTags.getThemeAssetUrl('img/KoTi_Logo_40x15_2c.png') %>" alt="RMV Fahrplanauskunft - Button" /></td>
+                <td>© RMV</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td><img width="100" src="<%= TemplateTags.getThemeAssetUrl('img/google_maps.png') %>"></td>
+                <td>Alpár-Etele Méder</td>
+                <td>Creative Commons (Attribution 3.0 Unported)</td>
+            </tr>
+        </table>
+
+        <br>
+        <br>
+        <br>
+
+        <li><h1>Datenschutz</h1></li>
+        Die App unterliegt den Datenschutzbestimmungen vom Hessischen Turnverband e.V..
+        <br>
+        Weitere Informationen zum Theme Datenschutz unter
+        <a href="#" onclick="window.open('https://www.htv-online.de/datenschutz/')">https://www.htv-online.de/datenschutz/</a>
+    </ul>
+
+
+</div>
